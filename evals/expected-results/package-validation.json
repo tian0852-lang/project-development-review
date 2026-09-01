@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "version": "2.2.0",
+  "markdown_files_checked": 259,
+  "automatic_passed": [
+    "Required files and names",
+    "Version consistency",
+    "Mandatory routes and reference reachability",
+    "Template metadata and sections",
+    "Manifest template keys",
+    "Compatibility aliases",
+    "Six persistent-rule and fallback contracts",
+    "Markdown local links",
+    "Python source syntax"
+  ],
+  "errors": [],
+  "not_proven": [
+    "Client discovery/runtime behavior",
+    "Natural-language correctness",
+    "Genuine user approval",
+    "External URL availability",
+    "General YAML/JSON Schema compliance"
+  ]
+}

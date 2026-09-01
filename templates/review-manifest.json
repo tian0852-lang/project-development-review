@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.2.0",
+  "fixture": false,
+  "delivery_mode": "filesystem",
+  "project_id": "{{project_id}}",
+  "project_name": "{{project_name}}",
+  "review_id": "{{review_id}}",
+  "mode": "new",
+  "review_root": "{{review_root}}",
+  "project_root": null,
+  "document_language": "{{document_language}}",
+  "stage": "intake",
+  "design_source": {
+    "selected": null,
+    "link": null,
+    "scope_ids": [],
+    "evidence_ids": []
+  },
+  "target_platforms": [],
+  "versions": {
+    "pages": null,
+    "specification": null,
+    "plan": null,
+    "resources": null
+  },
+  "baseline": {
+    "id": "BASELINE-1",
+    "version": "1",
+    "repository_exists": false,
+    "readme_paths": [],
+    "revision": null,
+    "work_units": [],
+    "limitations": [
+      "{{baseline_limitations}}"
+    ]
+  },
+  "artifacts": {},
+  "evidence": {},
+  "items": {},
+  "decisions": {},
+  "acceptance": {},
+  "confirmation_events": {},
+  "invalidations": [],
+  "preconditions": {},
+  "external_dependencies": {},
+  "resource_inventory": {
+    "required": true,
+    "artifact_id": null,
+    "version": null,
+    "resource_ids": [],
+    "historical_inventory": "Not assessed",
+    "save_root": "assets/",
+    "confirmation_event_ids": [],
+    "persistence_status": "Not started"
+  },
+  "resources": {},
+  "changes": {},
+  "active_cards": {
+    "assessment_id": null,
+    "implementation_id": null
+  },
+  "validation": {
+    "report_artifact_id": null,
+    "declared_readiness": "Not ready",
+    "manual_checks": []
+  }
+}

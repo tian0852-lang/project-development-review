@@ -1,0 +1,1030 @@
+{
+  "schema_version": "2.2.0",
+  "fixture": true,
+  "delivery_mode": "filesystem",
+  "project_id": "DEMO-OFFLINE-CARDS",
+  "project_name": "Offline Cards (synthetic)",
+  "review_id": "REVIEW-new-ready",
+  "mode": "new",
+  "review_root": ".",
+  "project_root": null,
+  "document_language": "en",
+  "stage": "handoff_validation",
+  "design_source": {
+    "selected": "Figma",
+    "link": "https://www.figma.com/design/SYNTHETIC-NOT-A-REAL-FILE/offline-cards",
+    "scope_ids": [
+      "frame-list",
+      "frame-detail"
+    ],
+    "evidence_ids": [
+      "E-DESIGN"
+    ]
+  },
+  "target_platforms": [
+    "H5"
+  ],
+  "versions": {
+    "pages": "P1",
+    "specification": "S1",
+    "plan": "T1",
+    "resources": "R1"
+  },
+  "baseline": {
+    "id": "BASELINE-1",
+    "version": "B1",
+    "repository_exists": false,
+    "readme_paths": [],
+    "revision": null,
+    "work_units": [
+      {
+        "id": "WU1",
+        "operation": "new",
+        "target": "H5",
+        "path": "."
+      }
+    ],
+    "limitations": [
+      "Synthetic fixture only; no real repository or client is asserted."
+    ]
+  },
+  "artifacts": {
+    "DOC-REVIEW-README": {
+      "role": "review_readme",
+      "path": "README.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Draft",
+      "approval_event_ids": [],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    },
+    "BASELINE-1": {
+      "role": "baseline",
+      "path": "evidence/project-baseline.md",
+      "version": "B1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PAGES"
+      ],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    },
+    "DOC-DESIGN-SOURCE": {
+      "role": "design_source",
+      "path": "evidence/design-source.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PAGES"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    },
+    "PAGES-1": {
+      "role": "pages",
+      "path": "evidence/page-inventory.md",
+      "version": "P1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PAGES"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "PG1",
+        "PG2"
+      ],
+      "depends_on": {}
+    },
+    "RESOURCES-1": {
+      "role": "resource_inventory",
+      "path": "evidence/resource-inventory.md",
+      "version": "R1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PAGES"
+      ],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    },
+    "DOC-DECISIONS": {
+      "role": "decisions",
+      "path": "decisions/decision-register.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Draft",
+      "approval_event_ids": [],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    },
+    "DOC-SPEC0": {
+      "role": "spec0",
+      "path": "specs/00-product-brief.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP0"
+      ],
+      "depends_on": {}
+    },
+    "DOC-SPEC1": {
+      "role": "spec1",
+      "path": "specs/01-scope-and-priority.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP1"
+      ],
+      "depends_on": {}
+    },
+    "DOC-SPEC2": {
+      "role": "spec2",
+      "path": "specs/02-user-flow-and-states.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP2"
+      ],
+      "depends_on": {}
+    },
+    "DOC-SPEC3": {
+      "role": "spec3",
+      "path": "specs/03-design-spec.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP3"
+      ],
+      "depends_on": {}
+    },
+    "DOC-SPEC4": {
+      "role": "spec4",
+      "path": "specs/04-data-and-privacy.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP4"
+      ],
+      "depends_on": {}
+    },
+    "DOC-SPEC5": {
+      "role": "spec5",
+      "path": "specs/05-acceptance-and-test.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP5"
+      ],
+      "depends_on": {}
+    },
+    "DOC-SPEC6": {
+      "role": "spec6",
+      "path": "specs/06-design-difference-log.md",
+      "version": "S1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-DESIGN",
+        "E-USER"
+      ],
+      "item_ids": [
+        "SP6"
+      ],
+      "depends_on": {}
+    },
+    "ASSESS-1": {
+      "role": "assessment_card",
+      "path": "technical/technical-assessment-task-card.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {
+        "BASELINE-1": "B1",
+        "DOC-SPEC0": "S1",
+        "DOC-SPEC1": "S1",
+        "DOC-SPEC2": "S1",
+        "DOC-SPEC3": "S1",
+        "DOC-SPEC4": "S1",
+        "DOC-SPEC5": "S1",
+        "DOC-SPEC6": "S1"
+      }
+    },
+    "PLAN-1": {
+      "role": "plan",
+      "path": "technical/technical-implementation-plan.md",
+      "version": "T1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PLAN"
+      ],
+      "evidence_ids": [
+        "E-TECH",
+        "E-USER"
+      ],
+      "item_ids": [
+        "TECH1"
+      ],
+      "depends_on": {
+        "BASELINE-1": "B1",
+        "DOC-SPEC0": "S1",
+        "DOC-SPEC1": "S1",
+        "DOC-SPEC2": "S1",
+        "DOC-SPEC3": "S1",
+        "DOC-SPEC4": "S1",
+        "DOC-SPEC5": "S1",
+        "DOC-SPEC6": "S1",
+        "ASSESS-1": "1"
+      }
+    },
+    "IMPLEMENT-1": {
+      "role": "implementation_card",
+      "path": "handoff/implementation-task-card.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PLAN"
+      ],
+      "evidence_ids": [
+        "E-TECH",
+        "E-USER"
+      ],
+      "item_ids": [
+        "TECH1"
+      ],
+      "depends_on": {
+        "BASELINE-1": "B1",
+        "DOC-SPEC0": "S1",
+        "DOC-SPEC1": "S1",
+        "DOC-SPEC2": "S1",
+        "DOC-SPEC3": "S1",
+        "DOC-SPEC4": "S1",
+        "DOC-SPEC5": "S1",
+        "DOC-SPEC6": "S1",
+        "PLAN-1": "T1"
+      }
+    },
+    "DOC-APPROVAL-RECORD": {
+      "role": "approval_record",
+      "path": "handoff/implementation-approval-record.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PLAN"
+      ],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {
+        "BASELINE-1": "B1",
+        "DOC-SPEC0": "S1",
+        "DOC-SPEC1": "S1",
+        "DOC-SPEC2": "S1",
+        "DOC-SPEC3": "S1",
+        "DOC-SPEC4": "S1",
+        "DOC-SPEC5": "S1",
+        "DOC-SPEC6": "S1",
+        "PLAN-1": "T1"
+      }
+    },
+    "DOC-HANDOFF": {
+      "role": "handoff",
+      "path": "handoff/developer-handoff.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PLAN"
+      ],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {
+        "BASELINE-1": "B1",
+        "DOC-SPEC0": "S1",
+        "DOC-SPEC1": "S1",
+        "DOC-SPEC2": "S1",
+        "DOC-SPEC3": "S1",
+        "DOC-SPEC4": "S1",
+        "DOC-SPEC5": "S1",
+        "DOC-SPEC6": "S1",
+        "PLAN-1": "T1"
+      }
+    },
+    "DOC-VALIDATION-REPORT": {
+      "role": "validation_report",
+      "path": "validation/validation-report.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Draft",
+      "approval_event_ids": [],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    }
+  },
+  "evidence": {
+    "E-DESIGN": {
+      "kind": "design_observation",
+      "location": "evidence/synthetic-design.md#frames",
+      "readable_scope": "Two 390 x 844 frames; static text and boxes.",
+      "limitations": [
+        "Fictional test evidence, not a live tool response."
+      ],
+      "author": null,
+      "time": null,
+      "design_source": "Figma"
+    },
+    "E-USER": {
+      "kind": "user_provided",
+      "location": "evidence/synthetic-transcript.md#requirements",
+      "readable_scope": "Offline flow, no login/network, state and privacy rules.",
+      "limitations": [
+        "Fictional test evidence, not a live tool response."
+      ],
+      "author": null,
+      "time": null
+    },
+    "E-TECH": {
+      "kind": "inference",
+      "location": "evidence/synthetic-transcript.md#plan-proposal",
+      "readable_scope": "Proposed vanilla browser files, pending plan approval until EV-PLAN.",
+      "limitations": [
+        "Fictional test evidence, not a live tool response."
+      ],
+      "author": null,
+      "time": null
+    }
+  },
+  "items": {
+    "PG1": {
+      "kind": "page",
+      "artifact_id": "PAGES-1",
+      "summary": "Card list",
+      "scope": "in",
+      "evidence_ids": [
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [],
+      "dependencies": [],
+      "platforms": [],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PAGES"
+      ]
+    },
+    "PG2": {
+      "kind": "page",
+      "artifact_id": "PAGES-1",
+      "summary": "Card detail",
+      "scope": "in",
+      "evidence_ids": [
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [],
+      "dependencies": [],
+      "platforms": [],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PAGES"
+      ]
+    },
+    "SP0": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC0",
+      "summary": "Help a visitor inspect offline cards",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "SP1": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC1",
+      "summary": "Two pages and one dialog; no login/network",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "SP2": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC2",
+      "summary": "Open detail and preserve list selection on return",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [
+        "DEC-FLOW"
+      ],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "SP3": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC3",
+      "summary": "Static frame layout and supplied text",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "SP4": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC4",
+      "summary": "Fictional in-memory data only",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "SP5": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC5",
+      "summary": "Browser steps cover list, detail, return and cancel/confirm",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "SP6": {
+      "kind": "specification",
+      "artifact_id": "DOC-SPEC6",
+      "summary": "No unresolved accepted deviation",
+      "scope": "in",
+      "evidence_ids": [
+        "E-USER",
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ]
+    },
+    "TECH1": {
+      "kind": "technical",
+      "artifact_id": "PLAN-1",
+      "summary": "Implement approved offline H5 flow in proposed vanilla files",
+      "scope": "in",
+      "evidence_ids": [
+        "E-TECH",
+        "E-USER"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "dependencies": [
+        "SP0",
+        "SP1",
+        "SP2",
+        "SP3",
+        "SP4",
+        "SP5",
+        "SP6"
+      ],
+      "platforms": [
+        "H5"
+      ],
+      "approval_status": "Approved",
+      "approval_event_ids": [
+        "EV-PLAN"
+      ]
+    }
+  },
+  "decisions": {
+    "DEC-FLOW": {
+      "question": "Should cancel preserve selection?",
+      "facts": [
+        "Synthetic user supplied the scope."
+      ],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "affected_item_ids": [
+        "SP2"
+      ],
+      "options": [
+        "Use stated scope",
+        "Exclude flow"
+      ],
+      "recommendation": null,
+      "rationale": "The user decides product behavior.",
+      "blocking_level": "specification",
+      "status": "resolved",
+      "owner": null,
+      "user_decision": "Cancel preserves selection; confirm clears it.",
+      "approval_event_ids": [
+        "EV-SPEC"
+      ],
+      "precondition_id": null
+    }
+  },
+  "acceptance": {
+    "AC1": {
+      "item_ids": [
+        "SP0",
+        "SP1",
+        "SP2",
+        "SP3",
+        "SP4",
+        "SP5",
+        "SP6",
+        "TECH1"
+      ],
+      "platforms": [
+        "H5"
+      ],
+      "steps": [
+        "Open fixture card list at 390 x 844",
+        "Choose card A and open detail",
+        "Return to list; retain selected card",
+        "Open Clear confirmation; cancel, then confirm",
+        "Reload and inspect browser network/storage"
+      ],
+      "expected_result": "Two frames, correct titles; return retains A; cancel retains selection; confirm clears it; reload clears memory; no external requests or persistent personal data.",
+      "environment": "Desktop Chromium with viewport 390 x 844; no backend; keyboard Escape and visible Back tested.",
+      "evidence_required": "Screenshots and manual interaction recording, browser network/storage observation; planned, not yet executed."
+    }
+  },
+  "confirmation_events": {
+    "EV-PAGES": {
+      "gate": "page_inventory",
+      "source_type": "user_message",
+      "source": {
+        "text": "I approve displayed page inventory P1 and resource inventory R1: List, Detail and IMG-001; save IMG-001 under the shown review_root/assets path.",
+        "reference": "evidence/synthetic-transcript.md",
+        "message_id": null,
+        "time": null,
+        "limitations": [
+          "Fictional transcript; no real message ID or time."
+        ]
+      },
+      "intent": "affirmative",
+      "provenance_status": "Verified",
+      "target_versions": {
+        "pages": "P1",
+        "specification": "S1",
+        "plan": "T1",
+        "resources": "R1"
+      },
+      "resource_inventory_version": "R1",
+      "resource_ids": [
+        "IMG-001"
+      ],
+      "resource_save_authorized": true,
+      "targets": {
+        "BASELINE-1": {
+          "version": "B1",
+          "path": "evidence/project-baseline.md",
+          "sha256": "0070a3f21f2b4285d696ef3b2379214e345318dbb5d0375de507d9856c7c2485",
+          "frozen_text_ref": null
+        },
+        "DOC-DESIGN-SOURCE": {
+          "version": "1",
+          "path": "evidence/design-source.md",
+          "sha256": "bdccdd634fd622cc4e702b7b47fab9b1e425c309f3cdec31c8f81c656b535e95",
+          "frozen_text_ref": null
+        },
+        "PAGES-1": {
+          "version": "P1",
+          "path": "evidence/page-inventory.md",
+          "sha256": "f0f7606bebb92acd80451c06c0df2794bf3e474b01eef796fad3ec181fac155f",
+          "frozen_text_ref": null
+        },
+        "RESOURCES-1": {
+          "version": "R1",
+          "path": "evidence/resource-inventory.md",
+          "sha256": "11f96120ccfe53f3c22edc0e10469f624d6f9741b404a546134a2899091c3f6f",
+          "frozen_text_ref": null
+        }
+      },
+      "item_ids": [
+        "PG1",
+        "PG2"
+      ],
+      "exclusions": [],
+      "precondition_ids": [],
+      "decision_values": {},
+      "basis_event_ids": [],
+      "status": "valid"
+    },
+    "EV-SPEC": {
+      "gate": "specification",
+      "source_type": "user_message",
+      "source": {
+        "text": "Confirm specification S1 with the displayed offline scope and DEC-FLOW decision.",
+        "reference": "evidence/synthetic-transcript.md",
+        "message_id": null,
+        "time": null,
+        "limitations": [
+          "Fictional transcript; no real message ID or time."
+        ]
+      },
+      "intent": "affirmative",
+      "provenance_status": "Verified",
+      "target_versions": {
+        "pages": "P1",
+        "specification": "S1",
+        "plan": "T1",
+        "resources": "R1"
+      },
+      "resource_inventory_version": null,
+      "resource_ids": [],
+      "resource_save_authorized": false,
+      "targets": {
+        "BASELINE-1": {
+          "version": "B1",
+          "path": "evidence/project-baseline.md",
+          "sha256": "0070a3f21f2b4285d696ef3b2379214e345318dbb5d0375de507d9856c7c2485",
+          "frozen_text_ref": null
+        },
+        "DOC-DESIGN-SOURCE": {
+          "version": "1",
+          "path": "evidence/design-source.md",
+          "sha256": "bdccdd634fd622cc4e702b7b47fab9b1e425c309f3cdec31c8f81c656b535e95",
+          "frozen_text_ref": null
+        },
+        "PAGES-1": {
+          "version": "P1",
+          "path": "evidence/page-inventory.md",
+          "sha256": "f0f7606bebb92acd80451c06c0df2794bf3e474b01eef796fad3ec181fac155f",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC0": {
+          "version": "S1",
+          "path": "specs/00-product-brief.md",
+          "sha256": "12d1eee3663d0b75b878fbb719ca8692dae04f7532f4f78125f26f95d5288860",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC1": {
+          "version": "S1",
+          "path": "specs/01-scope-and-priority.md",
+          "sha256": "19a9dd71dbb2fb20567fcb4837812515051d65a29dd384df8e6f9c61d5977648",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC2": {
+          "version": "S1",
+          "path": "specs/02-user-flow-and-states.md",
+          "sha256": "a6fa5ad6c31098cd03733ad50110645c0480dfd9b149f0711021a515bb562ae7",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC3": {
+          "version": "S1",
+          "path": "specs/03-design-spec.md",
+          "sha256": "18bd0b8008bdb042f1c119a22a9b4bbf225abc611c10840db3dfa2f3b3f75cb6",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC4": {
+          "version": "S1",
+          "path": "specs/04-data-and-privacy.md",
+          "sha256": "268145be3bf4447fd2aee14a00d6a6e433880d9691e6691667e0178511f9513e",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC5": {
+          "version": "S1",
+          "path": "specs/05-acceptance-and-test.md",
+          "sha256": "4e13342bd65e0d9a9b5bd22933a495bc0360c4edab6f5c3d917798c9e02dbb6b",
+          "frozen_text_ref": null
+        },
+        "DOC-SPEC6": {
+          "version": "S1",
+          "path": "specs/06-design-difference-log.md",
+          "sha256": "5a0ab42abb8771cdf6a4d76d2b32c2ddb5a36234b58a8f0b7e2f1791e69fb860",
+          "frozen_text_ref": null
+        }
+      },
+      "item_ids": [
+        "SP0",
+        "SP1",
+        "SP2",
+        "SP3",
+        "SP4",
+        "SP5",
+        "SP6"
+      ],
+      "exclusions": [],
+      "precondition_ids": [],
+      "decision_values": {
+        "DEC-FLOW": "Cancel preserves selection; confirm clears it."
+      },
+      "basis_event_ids": [
+        "EV-PAGES"
+      ],
+      "status": "valid"
+    },
+    "EV-PLAN": {
+      "gate": "technical_plan",
+      "source_type": "user_message",
+      "source": {
+        "text": "Confirm plan T1 and the displayed file scope.",
+        "reference": "evidence/synthetic-transcript.md",
+        "message_id": null,
+        "time": null,
+        "limitations": [
+          "Fictional transcript; no real message ID or time."
+        ]
+      },
+      "intent": "affirmative",
+      "provenance_status": "Verified",
+      "target_versions": {
+        "pages": "P1",
+        "specification": "S1",
+        "plan": "T1",
+        "resources": "R1"
+      },
+      "resource_inventory_version": null,
+      "resource_ids": [],
+      "resource_save_authorized": false,
+      "targets": {
+        "BASELINE-1": {
+          "version": "B1",
+          "path": "evidence/project-baseline.md",
+          "sha256": "0070a3f21f2b4285d696ef3b2379214e345318dbb5d0375de507d9856c7c2485",
+          "frozen_text_ref": null
+        },
+        "ASSESS-1": {
+          "version": "1",
+          "path": "technical/technical-assessment-task-card.md",
+          "sha256": "31e5c553528da1512ad926de1e0d38eef0a7d290a0bca07f0b67040b99a17e35",
+          "frozen_text_ref": null
+        },
+        "PLAN-1": {
+          "version": "T1",
+          "path": "technical/technical-implementation-plan.md",
+          "sha256": "6186606455be3bba86df46dd5bb773f00a3efa9115a412747f5f42cb592e58ee",
+          "frozen_text_ref": null
+        }
+      },
+      "item_ids": [
+        "TECH1"
+      ],
+      "exclusions": [],
+      "precondition_ids": [],
+      "decision_values": {},
+      "basis_event_ids": [
+        "EV-SPEC"
+      ],
+      "status": "valid"
+    }
+  },
+  "invalidations": [],
+  "preconditions": {},
+  "external_dependencies": {},
+  "resource_inventory": {
+    "required": true,
+    "artifact_id": "RESOURCES-1",
+    "version": "R1",
+    "resource_ids": [
+      "IMG-001"
+    ],
+    "historical_inventory": "Not applicable: synthetic new baseline.",
+    "save_root": "assets/",
+    "confirmation_event_ids": [
+      "EV-PAGES"
+    ],
+    "persistence_status": "Complete"
+  },
+  "resources": {
+    "IMG-001": {
+      "type": "Image",
+      "page_ids": [
+        "frame-list",
+        "frame-detail"
+      ],
+      "source_node_ids": [
+        "frame-list-hero"
+      ],
+      "usage": "Offline card illustration",
+      "variant": "default",
+      "original_dimensions": "unknown",
+      "design_dimensions": "160x90",
+      "export_runtime_dimensions": "160x90",
+      "scale": "1x",
+      "format": "SVG",
+      "crop_fit": "contain, centered",
+      "location": "evidence/synthetic-design.md#frames",
+      "accessibility": "synthetic source available to fixture generator",
+      "rights": "Synthetic fixture; no external rights",
+      "evidence_ids": [
+        "E-DESIGN"
+      ],
+      "decision_ids": [],
+      "acceptance_ids": [
+        "AC1"
+      ],
+      "approval_status": "Approved",
+      "save_status": "Saved",
+      "saved_path": "assets/IMG-001/1x/hero.svg",
+      "sha256": "170ce0860585697201182e9c0a5a2ce7a89bf35073dd5983d175b44fc94e5d84"
+    }
+  },
+  "changes": {},
+  "active_cards": {
+    "assessment_id": "ASSESS-1",
+    "implementation_id": "IMPLEMENT-1"
+  },
+  "validation": {
+    "report_artifact_id": "DOC-VALIDATION-REPORT",
+    "declared_readiness": "Ready",
+    "manual_checks": [
+      {
+        "id": "confirmation_provenance",
+        "status": "passed",
+        "evidence_ref": "evidence/synthetic-audit.md",
+        "limitations": [
+          "Synthetic attestation for validator testing only; not a real human review."
+        ]
+      },
+      {
+        "id": "semantic_consistency",
+        "status": "passed",
+        "evidence_ref": "evidence/synthetic-audit.md",
+        "limitations": [
+          "Synthetic attestation for validator testing only; not a real human review."
+        ]
+      },
+      {
+        "id": "design_fidelity",
+        "status": "passed",
+        "evidence_ref": "evidence/synthetic-audit.md",
+        "limitations": [
+          "Synthetic attestation for validator testing only; not a real human review."
+        ]
+      }
+    ]
+  }
+}

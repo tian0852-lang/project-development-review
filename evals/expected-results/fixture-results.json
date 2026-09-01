@@ -1,0 +1,32 @@
+{
+  "new-ready": {
+    "readiness": "Ready",
+    "phase_passed": true,
+    "errors": []
+  },
+  "change-ready": {
+    "readiness": "Ready",
+    "phase_passed": true,
+    "errors": []
+  },
+  "mixed-ready": {
+    "readiness": "Ready",
+    "phase_passed": true,
+    "errors": []
+  },
+  "conditional-ready": {
+    "readiness": "Ready with preconditions",
+    "phase_passed": true,
+    "errors": []
+  },
+  "intake-valid": {
+    "readiness": "Not ready",
+    "phase_passed": true,
+    "errors": []
+  },
+  "plan-proposal-valid": {
+    "readiness": "Not ready",
+    "phase_passed": true,
+    "errors": []
+  }
+}

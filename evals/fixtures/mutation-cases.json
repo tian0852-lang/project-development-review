@@ -1,0 +1,904 @@
+[
+  {
+    "id": "dual-source",
+    "fixture": "new-ready",
+    "expect_code": "DUAL_SOURCE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/evidence/E-OTHER",
+        "value": {
+          "kind": "design_observation",
+          "design_source": "MasterGo",
+          "location": "another-source",
+          "readable_scope": "Conflicting frame",
+          "limitations": [],
+          "author": null,
+          "time": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing-source-link",
+    "fixture": "new-ready",
+    "expect_code": "DESIGN_SOURCE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/design_source/link",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": "pages-unapproved",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/confirmation_events/EV-PAGES"
+      }
+    ]
+  },
+  {
+    "id": "spec-unapproved",
+    "fixture": "new-ready",
+    "expect_code": "PREMATURE_ARTIFACT",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/confirmation_events/EV-SPEC"
+      }
+    ]
+  },
+  {
+    "id": "plan-unapproved",
+    "fixture": "new-ready",
+    "expect_code": "PREMATURE_ARTIFACT",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/confirmation_events/EV-PLAN"
+      }
+    ]
+  },
+  {
+    "id": "approval-quoted",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/intent",
+        "value": "quoted"
+      }
+    ]
+  },
+  {
+    "id": "approval-negated",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/intent",
+        "value": "negated"
+      }
+    ]
+  },
+  {
+    "id": "approval-conditional",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/intent",
+        "value": "conditional"
+      }
+    ]
+  },
+  {
+    "id": "approval-example",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/intent",
+        "value": "example"
+      }
+    ]
+  },
+  {
+    "id": "history-unverified",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/provenance_status",
+        "value": "Recorded but unverified"
+      },
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/source_type",
+        "value": "historical_summary"
+      }
+    ]
+  },
+  {
+    "id": "blocker-page_scope",
+    "fixture": "new-ready",
+    "expect_code": "BLOCKING_DECISION",
+    "sync_summary": true,
+    "operations": [
+      {
+        "op": "set",
+        "path": "/decisions/DEC-NEW",
+        "value": {
+          "question": "Which variant is intended?",
+          "facts": [
+            "Only the basic scope is known."
+          ],
+          "evidence_ids": [
+            "E-USER"
+          ],
+          "affected_item_ids": [
+            "TECH1"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "recommendation": "A",
+          "rationale": "User decision is required because this affects the stated item.",
+          "blocking_level": "page_scope",
+          "status": "unresolved",
+          "owner": null,
+          "user_decision": null,
+          "approval_event_ids": [],
+          "precondition_id": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "blocker-specification",
+    "fixture": "new-ready",
+    "expect_code": "BLOCKING_DECISION",
+    "sync_summary": true,
+    "operations": [
+      {
+        "op": "set",
+        "path": "/decisions/DEC-NEW",
+        "value": {
+          "question": "Which variant is intended?",
+          "facts": [
+            "Only the basic scope is known."
+          ],
+          "evidence_ids": [
+            "E-USER"
+          ],
+          "affected_item_ids": [
+            "TECH1"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "recommendation": "A",
+          "rationale": "User decision is required because this affects the stated item.",
+          "blocking_level": "specification",
+          "status": "unresolved",
+          "owner": null,
+          "user_decision": null,
+          "approval_event_ids": [],
+          "precondition_id": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "blocker-plan",
+    "fixture": "new-ready",
+    "expect_code": "BLOCKING_DECISION",
+    "sync_summary": true,
+    "operations": [
+      {
+        "op": "set",
+        "path": "/decisions/DEC-NEW",
+        "value": {
+          "question": "Which variant is intended?",
+          "facts": [
+            "Only the basic scope is known."
+          ],
+          "evidence_ids": [
+            "E-USER"
+          ],
+          "affected_item_ids": [
+            "TECH1"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "recommendation": "A",
+          "rationale": "User decision is required because this affects the stated item.",
+          "blocking_level": "plan",
+          "status": "unresolved",
+          "owner": null,
+          "user_decision": null,
+          "approval_event_ids": [],
+          "precondition_id": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "out-of-scope-open-question",
+    "fixture": "new-ready",
+    "expect_code": null,
+    "sync_summary": true,
+    "expect_readiness": "Ready",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/decisions/DEC-FUTURE",
+        "value": {
+          "question": "Which variant is intended?",
+          "facts": [
+            "Only the basic scope is known."
+          ],
+          "evidence_ids": [
+            "E-USER"
+          ],
+          "affected_item_ids": [],
+          "options": [
+            "A",
+            "B"
+          ],
+          "recommendation": "A",
+          "rationale": "User decision is required because this affects the stated item.",
+          "blocking_level": "out_of_scope",
+          "status": "unresolved",
+          "owner": null,
+          "user_decision": null,
+          "approval_event_ids": [],
+          "precondition_id": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "nonblocking-open-question",
+    "fixture": "new-ready",
+    "expect_code": null,
+    "sync_summary": true,
+    "expect_readiness": "Ready",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/decisions/DEC-LABEL",
+        "value": {
+          "question": "Which variant is intended?",
+          "facts": [
+            "Only the basic scope is known."
+          ],
+          "evidence_ids": [
+            "E-USER"
+          ],
+          "affected_item_ids": [
+            "TECH1"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "recommendation": "A",
+          "rationale": "User decision is required because this affects the stated item.",
+          "blocking_level": "nonblocking",
+          "status": "unresolved",
+          "owner": null,
+          "user_decision": null,
+          "approval_event_ids": [],
+          "precondition_id": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "plan-version-conflict",
+    "fixture": "new-ready",
+    "expect_code": "VERSION",
+    "sync_summary": true,
+    "operations": [
+      {
+        "op": "set",
+        "path": "/versions/plan",
+        "value": "T2"
+      }
+    ]
+  },
+  {
+    "id": "wrong-event-reference",
+    "fixture": "new-ready",
+    "expect_code": "REFERENCE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/items/TECH1/approval_event_ids",
+        "value": [
+          "EV-NOT-REAL"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "changed-approved-bytes",
+    "fixture": "new-ready",
+    "expect_code": "HASH_MISMATCH",
+    "operations": [
+      {
+        "op": "append_file",
+        "path": "technical/technical-implementation-plan.md",
+        "value": "\nUnapproved additional route.\n"
+      }
+    ]
+  },
+  {
+    "id": "broken-local-link",
+    "fixture": "new-ready",
+    "expect_code": "LINK",
+    "operations": [
+      {
+        "op": "append_file",
+        "path": "handoff/developer-handoff.md",
+        "value": "\n[Missing file](missing.md)\n"
+      }
+    ]
+  },
+  {
+    "id": "missing-core-spec",
+    "fixture": "new-ready",
+    "expect_code": "ARTIFACT_READ",
+    "operations": [
+      {
+        "op": "remove_file",
+        "path": "specs/04-data-and-privacy.md"
+      }
+    ]
+  },
+  {
+    "id": "wrong-frozen-event-path",
+    "fixture": "new-ready",
+    "expect_code": "EVENT_VERSION",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/targets/PLAN-1/path",
+        "value": "technical/other-plan.md"
+      }
+    ]
+  },
+  {
+    "id": "body-placeholder",
+    "fixture": "new-ready",
+    "expect_code": "PLACEHOLDER",
+    "operations": [
+      {
+        "op": "append_file",
+        "path": "handoff/developer-handoff.md",
+        "value": "\n{{unfinished_requirement}}\n"
+      }
+    ]
+  },
+  {
+    "id": "manifest-placeholder",
+    "fixture": "new-ready",
+    "expect_code": "PLACEHOLDER",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/project_name",
+        "value": "{{project_name}}"
+      }
+    ]
+  },
+  {
+    "id": "missing-manual-proof",
+    "fixture": "new-ready",
+    "expect_code": "MANUAL_UNVERIFIED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/validation/manual_checks",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "third-platform-uncovered",
+    "fixture": "new-ready",
+    "expect_code": "ACCEPTANCE_COVERAGE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/target_platforms",
+        "value": [
+          "H5",
+          "iOS",
+          "Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "excluded-item-used",
+    "fixture": "new-ready",
+    "expect_code": "EXCLUDED_DEPENDENCY",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/items/SP1/scope",
+        "value": "out"
+      },
+      {
+        "op": "set",
+        "path": "/items/SP1/approval_status",
+        "value": "Out of scope"
+      }
+    ]
+  },
+  {
+    "id": "unapproved-inference-implemented",
+    "fixture": "new-ready",
+    "expect_code": "UNAPPROVED_SCOPE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/items/TECH1/approval_status",
+        "value": "Draft"
+      },
+      {
+        "op": "set",
+        "path": "/items/TECH1/approval_event_ids",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "font-choice-not-fixed",
+    "fixture": "conditional-ready",
+    "expect_code": "SOLUTION_UNDECIDED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/preconditions/PRE-FONT/changes_approved_solution",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": "condition-missing-actions",
+    "fixture": "conditional-ready",
+    "expect_code": "SCHEMA",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/preconditions/PRE-FONT/blocks_actions",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "condition-not-approved",
+    "fixture": "conditional-ready",
+    "expect_code": "CONDITION_APPROVAL",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PLAN/precondition_ids",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "asset-missing-unexplained",
+    "fixture": "conditional-ready",
+    "expect_code": "EXTERNAL_UNRESOLVED",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/preconditions",
+        "value": {}
+      }
+    ]
+  },
+  {
+    "id": "mixed-mode-misclassified",
+    "fixture": "mixed-ready",
+    "expect_code": "MODE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/mode",
+        "value": "new"
+      }
+    ]
+  },
+  {
+    "id": "change-impact-missing",
+    "fixture": "change-ready",
+    "expect_code": "CHANGE_ARTIFACT",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/artifacts/DOC-CHANGE-IMPACT"
+      }
+    ]
+  },
+  {
+    "id": "change-scan-incomplete",
+    "fixture": "change-ready",
+    "expect_code": "IMPACT_SCAN",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/changes/CH1/scan/shared_state"
+      }
+    ]
+  },
+  {
+    "id": "change-impact-unknown",
+    "fixture": "change-ready",
+    "expect_code": "UNKNOWN_IMPACT",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/changes/CH1/classification",
+        "value": "Unknown"
+      }
+    ]
+  },
+  {
+    "id": "change-card-as-authority",
+    "fixture": "change-ready",
+    "expect_code": "ACTIVE_CARD",
+    "sync_summary": true,
+    "operations": [
+      {
+        "op": "set",
+        "path": "/active_cards/implementation_id",
+        "value": "DOC-CHANGE-ATTACHMENT"
+      }
+    ]
+  },
+  {
+    "id": "artifact-path-escape",
+    "fixture": "new-ready",
+    "expect_code": "ARTIFACT_READ",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/artifacts/PLAN-1/path",
+        "value": "../plan.md"
+      }
+    ]
+  },
+  {
+    "id": "stale-md-summary",
+    "fixture": "new-ready",
+    "expect_code": "SUMMARY",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/decisions/DEC-NEW",
+        "value": {
+          "question": "Which variant is intended?",
+          "facts": [
+            "Only the basic scope is known."
+          ],
+          "evidence_ids": [
+            "E-USER"
+          ],
+          "affected_item_ids": [
+            "TECH1"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "recommendation": "A",
+          "rationale": "User decision is required because this affects the stated item.",
+          "blocking_level": "nonblocking",
+          "status": "unresolved",
+          "owner": null,
+          "user_decision": null,
+          "approval_event_ids": [],
+          "precondition_id": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "artifact-cycle",
+    "fixture": "new-ready",
+    "expect_code": "CYCLE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/artifacts/ASSESS-1/depends_on/PLAN-1",
+        "value": "T1"
+      }
+    ]
+  },
+  {
+    "id": "approval-cycle",
+    "fixture": "new-ready",
+    "expect_code": "CYCLE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PAGES/basis_event_ids",
+        "value": [
+          "EV-PLAN"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "empty-required-field",
+    "fixture": "new-ready",
+    "expect_code": "SCHEMA",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/project_name",
+        "value": " "
+      }
+    ]
+  },
+  {
+    "id": "premature-implementation-pointer",
+    "fixture": "plan-proposal-valid",
+    "expect_code": "PREMATURE_POINTER",
+    "sync_summary": true,
+    "operations": [
+      {
+        "op": "set",
+        "path": "/active_cards/implementation_id",
+        "value": "PLAN-1"
+      }
+    ]
+  },
+  {
+    "id": "text-only-cannot-ready",
+    "fixture": "new-ready",
+    "expect_code": "TEXT_ONLY",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/delivery_mode",
+        "value": "text_only"
+      }
+    ]
+  },
+  {
+    "id": "missing-candidate-event-target",
+    "fixture": "new-ready",
+    "expect_code": "APPROVAL_REQUIRED",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/confirmation_events/EV-SPEC/targets/DOC-SPEC4"
+      }
+    ]
+  },
+  {
+    "id": "approved-artifact-still-draft",
+    "fixture": "new-ready",
+    "expect_code": "ARTIFACT_STATUS",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/artifacts/DOC-SPEC4/approval_status",
+        "value": "Draft"
+      }
+    ]
+  },
+  {
+    "id": "empty-table-cell",
+    "fixture": "new-ready",
+    "expect_code": "EMPTY_TABLE_CELL",
+    "operations": [
+      {
+        "op": "append_file",
+        "path": "handoff/developer-handoff.md",
+        "value": "\n| ID | Required result |\n| --- | --- |\n| EXTRA | |\n"
+      }
+    ]
+  },
+  {
+    "id": "broken-markdown-anchor",
+    "fixture": "new-ready",
+    "expect_code": "LINK",
+    "operations": [
+      {
+        "op": "append_file",
+        "path": "handoff/developer-handoff.md",
+        "value": "\n[Unknown section](../specs/00-product-brief.md#does-not-exist)\n"
+      }
+    ]
+  },
+  {
+    "id": "evidence-index-incomplete",
+    "fixture": "new-ready",
+    "expect_code": "EVIDENCE_INDEX",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/artifacts/DOC-SPEC3/evidence_ids",
+        "value": [
+          "E-USER"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spec-draft-before-page-gate",
+    "fixture": "new-ready",
+    "expect_code": "PREMATURE_ARTIFACT",
+    "expect_message": "spec0 cannot",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/confirmation_events/EV-PAGES"
+      },
+      {
+        "op": "set",
+        "path": "/artifacts/DOC-SPEC0/approval_status",
+        "value": "Draft"
+      }
+    ]
+  },
+  {
+    "id": "plan-draft-before-spec-gate",
+    "fixture": "plan-proposal-valid",
+    "expect_code": "PREMATURE_ARTIFACT",
+    "expect_message": "plan cannot",
+    "operations": [
+      {
+        "op": "delete",
+        "path": "/confirmation_events/EV-SPEC"
+      }
+    ]
+  },
+  {
+    "id": "acceptance-has-no-steps",
+    "fixture": "new-ready",
+    "expect_code": "SCHEMA",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/acceptance/AC1/steps",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "source-without-evidence",
+    "fixture": "new-ready",
+    "expect_code": "SOURCE_EVIDENCE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/design_source/evidence_ids",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "resource-version-mismatch",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_VERSION",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/resource_inventory/version",
+        "value": "R2"
+      }
+    ]
+  },
+  {
+    "id": "resource-save-path-escapes",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_PATH",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/resources/IMG-001/saved_path",
+        "value": "assets/../project/assets/hero.jpg"
+      }
+    ]
+  },
+  {
+    "id": "resource-saved-without-record",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_SAVE_RECORD",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/resources/IMG-001/saved_path",
+        "value": null
+      },
+      {
+        "op": "set",
+        "path": "/resources/IMG-001/sha256",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": "resource-event-scope-mismatch",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_EVENT_SCOPE",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PAGES/resource_ids",
+        "value": []
+      }
+    ]
+  },
+  {
+    "id": "resource-saved-file-missing",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_FILE_MISSING",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/resources/IMG-001/saved_path",
+        "value": "assets/IMG-001/1x/missing.svg"
+      }
+    ]
+  },
+  {
+    "id": "resource-saved-hash-mismatch",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_HASH",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/resources/IMG-001/sha256",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ]
+  },
+  {
+    "id": "resource-save-without-authorization",
+    "fixture": "new-ready",
+    "expect_code": "RESOURCE_SAVE_AUTH",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/confirmation_events/EV-PAGES/resource_save_authorized",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": "change-resource-diff-missing",
+    "fixture": "change-ready",
+    "expect_code": "CHANGE_ARTIFACT",
+    "operations": [
+      {
+        "op": "set",
+        "path": "/changes/CH1/resource_diff_artifact_id",
+        "value": null
+      }
+    ]
+  }
+]

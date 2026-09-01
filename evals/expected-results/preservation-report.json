@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-31",
+  "method": "SHA-256 of sorted relative filenames and per-file SHA-256; regular non-symlink files; read-only.",
+  "records": [
+    {
+      "initial_path": "<external legacy-v1 package path>",
+      "final_path": "<external relocated legacy-v1 package path>",
+      "before": {
+        "count": 92,
+        "sha256": "3687629e292e1f12dbc8654f1ac87f8e8be4e363dfc0156c8dfc07e4fa63a749"
+      },
+      "after": {
+        "count": 92,
+        "sha256": "3687629e292e1f12dbc8654f1ac87f8e8be4e363dfc0156c8dfc07e4fa63a749"
+      },
+      "unchanged": true
+    },
+    {
+      "initial_path": "<external sample-project root>",
+      "final_path": "<external sample-project root>",
+      "before": {
+        "count": 62,
+        "sha256": "969b3660fb7dae1dfbfb7992d849a9cd7ba33fd934f0fadb58bd7ce3a290da75"
+      },
+      "after": {
+        "count": 62,
+        "sha256": "969b3660fb7dae1dfbfb7992d849a9cd7ba33fd934f0fadb58bd7ce3a290da75"
+      },
+      "unchanged": true
+    },
+    {
+      "initial_path": "<external source-package path>",
+      "final_path": "<external source-package path>",
+      "before": {
+        "count": 88,
+        "sha256": "0928d98e4f2d15707cff973376f65999d80f9d086425efc47bf11c620bd37928"
+      },
+      "after": {
+        "count": 88,
+        "sha256": "0928d98e4f2d15707cff973376f65999d80f9d086425efc47bf11c620bd37928"
+      },
+      "unchanged": true
+    },
+    {
+      "initial_path": "<external installed-skill path>",
+      "final_path": "<external installed-skill path>",
+      "before": {
+        "count": 88,
+        "sha256": "de08d5cc43fce236263fb1cab791dfbf6917f985360ca872b0caa9ab4d8da6b5"
+      },
+      "after": {
+        "count": 88,
+        "sha256": "de08d5cc43fce236263fb1cab791dfbf6917f985360ca872b0caa9ab4d8da6b5"
+      },
+      "unchanged": true
+    }
+  ],
+  "notes": [
+    "The desktop v1 folder was observed at a new nested path during the run. The assistant did not move, rename or delete it. Its relative-content hash is identical.",
+    "No installation, publication, business-code change, dependency installation, commit or push was performed."
+  ]
+}

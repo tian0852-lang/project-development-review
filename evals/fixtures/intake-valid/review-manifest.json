@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.2.0",
+  "fixture": true,
+  "delivery_mode": "filesystem",
+  "project_id": "DEMO-OFFLINE-CARDS",
+  "project_name": "Offline Cards (synthetic)",
+  "review_id": "REVIEW-intake-valid",
+  "mode": "new",
+  "review_root": ".",
+  "project_root": null,
+  "document_language": "en",
+  "stage": "intake",
+  "design_source": {
+    "selected": null,
+    "link": null,
+    "scope_ids": [],
+    "evidence_ids": []
+  },
+  "target_platforms": [
+    "H5"
+  ],
+  "versions": {
+    "pages": null,
+    "specification": null,
+    "plan": null,
+    "resources": null
+  },
+  "baseline": {
+    "id": "BASELINE-1",
+    "version": "B1",
+    "repository_exists": false,
+    "readme_paths": [],
+    "revision": null,
+    "work_units": [
+      {
+        "id": "WU1",
+        "operation": "new",
+        "target": "H5",
+        "path": "."
+      }
+    ],
+    "limitations": [
+      "Synthetic fixture only; no real repository or client is asserted."
+    ]
+  },
+  "artifacts": {
+    "DOC-REVIEW-README": {
+      "role": "review_readme",
+      "path": "README.md",
+      "version": "1",
+      "completion": "complete",
+      "approval_status": "Draft",
+      "approval_event_ids": [],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    },
+    "BASELINE-1": {
+      "role": "baseline",
+      "path": "evidence/project-baseline.md",
+      "version": "B1",
+      "completion": "complete",
+      "approval_status": "Draft",
+      "approval_event_ids": [],
+      "evidence_ids": [
+        "E-USER"
+      ],
+      "item_ids": [],
+      "depends_on": {}
+    }
+  },
+  "evidence": {
+    "E-USER": {
+      "kind": "user_provided",
+      "location": "evidence/synthetic-transcript.md#requirements",
+      "readable_scope": "Offline flow, no login/network, state and privacy rules.",
+      "limitations": [
+        "Fictional test evidence, not a live tool response."
+      ],
+      "author": null,
+      "time": null
+    }
+  },
+  "items": {},
+  "decisions": {},
+  "acceptance": {},
+  "confirmation_events": {},
+  "invalidations": [],
+  "preconditions": {},
+  "external_dependencies": {},
+  "resource_inventory": {
+    "required": false,
+    "artifact_id": null,
+    "version": null,
+    "resource_ids": [],
+    "historical_inventory": "Not applicable: synthetic new baseline.",
+    "save_root": "assets/",
+    "confirmation_event_ids": [],
+    "persistence_status": "Not started"
+  },
+  "resources": {},
+  "changes": {},
+  "active_cards": {
+    "assessment_id": null,
+    "implementation_id": null
+  },
+  "validation": {
+    "report_artifact_id": null,
+    "declared_readiness": "Not ready",
+    "manual_checks": []
+  }
+}
