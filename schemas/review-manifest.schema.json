@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Project Development Review Manifest 2.2.0",
+  "title": "Project Development Review Manifest 2.2.1",
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": "2.2.0"
+      "const": "2.2.1"
     },
     "fixture": {
       "type": "boolean"
@@ -1387,7 +1387,7 @@
     }
   },
   "x-contract": {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "stages": [
       "intake",
       "source_validation",

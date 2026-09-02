@@ -1,4 +1,4 @@
-# Conversation output contract — core 2.2.0
+# Conversation output contract — core 2.2.1
 
 This contract defines how the review state must be rendered in the current conversation. It does not add a fourth project gate. A document-only reference is insufficient when a decision or confirmation is due.
 

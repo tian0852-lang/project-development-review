@@ -163,7 +163,7 @@ class RegressionTests(unittest.TestCase):
             ('templates/02-user-flow-and-states.md','<!-- section:dialogs -->','<!-- section:omitted -->','TEMPLATE_SECTION'),
             ('references/confirmation-gates.md','compatibility alias','independent contract','ALIAS'),
             ('adapters/trae-work/start-review-prompt.md','Implementation pointer stays null','Implementation pointer is free','ADAPTER_FALLBACK_DRIFT'),
-            ('VERSION','2.2.0','1.0','VERSION'),
+            ('VERSION','2.2.1','1.0','VERSION'),
         ]
         for path,old,new,code in mutations:
             with self.subTest(path=path), tempfile.TemporaryDirectory(prefix='.package-test-',dir=HERE) as temp:

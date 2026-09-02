@@ -1,4 +1,4 @@
-# Compatibility alias — core 2.2.0
+# Compatibility alias — core 2.2.1
 
 This file is a compatibility alias for the retained v1 scenario category.
 

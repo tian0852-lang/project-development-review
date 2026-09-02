@@ -8,7 +8,25 @@ English | [简体中文](README.zh-CN.md)
 
 Before Vibe Coding begins, it turns design files, product goals, page scope, interaction rules, page resources, data boundaries and acceptance requirements into evidence-backed, versioned and approval-traceable specifications, a technical implementation plan and a developer handoff package.
 
-Current version: `2.2.0`
+Current version: `2.2.1`
+
+## Quick start
+
+After installing the matching platform adapter, send the following message to start a review.
+
+```text
+Please use the Figma MCP or MasterGo MCP to connect to the design document and start a project review.
+
+Project name: …
+Project goal: …
+Design source: Figma or MasterGo (choose one)
+Design link: …
+Current screenshot: …
+Target platform: …
+Project repository: …
+```
+
+Each review may use only one design source. Before starting the review, select the artboards to be reviewed in the design tool and keep that selection until the review ends. The Skill first validates the design source, inventories pages and resources, and asks you to confirm the scope before drafting specifications.
 
 ## Supported platforms
 

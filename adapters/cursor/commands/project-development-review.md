@@ -1,6 +1,6 @@
 # Start project-development-review
 
-<!-- core-version:2.2.0 -->
+<!-- core-version:2.2.1 -->
 
 Locate the complete package at the installed path recorded during setup, or the explicitly supplied `docs/skill-packages/project-development-review` directory. This latter path is a team convention, not a native discovery claim. Read its SKILL.md; do not silently load another same-named copy. Record core version and actual readable package path.
 
@@ -10,7 +10,7 @@ Use templates/review-manifest.json and review-readme.md, project-baseline.md, de
 
 Output review documentation and technical proposals only. Validate one design source, inventory pages and wait for page approval before specifications. At page inventory/confirmation render PAGE & RESOURCE CHECKPOINT with the count, In scope/Out of scope and every icon/image resource with dimensions and save status directly in chat; at every phase render all unresolved decisions in OPEN QUESTIONS PANEL.  Follow version-bound specification and plan gates. After valid page/resource confirmation, persist only confirmed resources under review_root/assets when export capability is available; record unavailable/conflict/precondition states before handoff. End with a checked handoff, never implementation. State which documents were read, which inputs are missing, permitted output at this phase, and the next user decision.
 
-<!-- fallback-version:2.2.0 -->
+<!-- fallback-version:2.2.1 -->
 <!-- fallback:start -->
 If the full package or a mandatory reference is unavailable, state the missing paths and available capabilities. This is a minimal safety fallback, not a claim of full Skill execution.
 

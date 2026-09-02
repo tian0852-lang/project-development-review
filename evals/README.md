@@ -1,4 +1,4 @@
-# Evaluation guide — 2.2.0
+# Evaluation guide — 2.2.1
 
 ## Four independent result classes
 

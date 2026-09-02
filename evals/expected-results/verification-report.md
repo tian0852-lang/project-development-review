@@ -1,4 +1,4 @@
-# Verification report — project-development-review 2.2.0
+# Verification report — project-development-review 2.2.1
 
 Date: 2026-09-01. Environment: macOS, Python 3.14.6; standard-library validators. Scope: the new Skill package and fictional fixtures only. This is a package-maintenance report, not approval of any business project.
 

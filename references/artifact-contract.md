@@ -1,4 +1,4 @@
-# Artifact contract — 2.2.0
+# Artifact contract — 2.2.1
 
 review-manifest.json is the single machine index. The schema defines exact keys/enums; x-contract defines stage keys, required roles, templates and metadata. Specifications remain the normative text at indexed versions.
 

@@ -1,4 +1,4 @@
-# Platform compatibility — core 2.2.0
+# Platform compatibility — core 2.2.1
 
 Documentation review date: 2026-08-31. Every v2 client installation, invocation, automatic match and connector end-to-end test is **not run**. Documented support is not runtime certification. No installation or publication occurred.
 

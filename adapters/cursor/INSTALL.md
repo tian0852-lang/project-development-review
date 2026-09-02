@@ -1,4 +1,4 @@
-# Cursor adapter — 2.2.0
+# Cursor adapter — 2.2.1
 
 ## Persistent rule and explicit entry
 

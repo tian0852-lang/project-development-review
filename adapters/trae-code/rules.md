@@ -1,6 +1,6 @@
 # project-development-review persistent review boundaries
 
-<!-- core-version:2.2.0 -->
+<!-- core-version:2.2.1 -->
 <!-- gates:start -->
 - Read the current review README, review-manifest.json, approved documents and project baseline before inspecting implementation files.
 - Use one design source: Figma or MasterGo. Resolve a source conflict before formal review.

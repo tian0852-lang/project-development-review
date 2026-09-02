@@ -1,4 +1,4 @@
-# ChatGPT adapter — 2.2.0
+# ChatGPT adapter — 2.2.1
 
 ## Installation and invocation
 

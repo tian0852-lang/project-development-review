@@ -1,4 +1,4 @@
-# Approval gates — sole authority, 2.2.0
+# Approval gates — sole authority, 2.2.1
 
 Three project gates: page_inventory, specification, technical_plan. Source selection is required only when absent/conflicting. Decision events record specific business choices without inventing extra project gates.
 

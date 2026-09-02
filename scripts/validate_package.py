@@ -40,7 +40,7 @@ def validate(root=PACKAGE):
     except (ValueError, KeyError):
         return {'passed':False,'errors':errors or [{'code':'CONTRACT','message':'Unreadable schema contract'}]}
     version=read('VERSION').strip()
-    if version!='2.2.0' or ct.get('version')!=version or s['properties']['schema_version'].get('const')!=version:
+    if version!='2.2.1' or ct.get('version')!=version or s['properties']['schema_version'].get('const')!=version:
         fail('VERSION','VERSION/schema/core contract mismatch')
     required=['SKILL.md','README.md','README.zh-CN.md','CHANGELOG.md',
               'agents/openai.yaml','templates/review-manifest.json',

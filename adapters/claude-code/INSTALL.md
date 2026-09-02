@@ -1,4 +1,4 @@
-# Claude Code adapter — 2.2.0
+# Claude Code adapter — 2.2.1
 
 The documented local project path is `.claude/skills/project-development-review/SKILL.md`; copy the complete package beside it, not SKILL.md alone. The documented personal path is `~/.claude/skills/project-development-review/SKILL.md`. The directory name exposes `/project-development-review`. Same-name personal Skills can shadow project Skills, so verify the resolved version. [Official Skills documentation](https://code.claude.com/docs/en/skills)
 

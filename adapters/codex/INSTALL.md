@@ -1,4 +1,4 @@
-# Codex adapter — 2.2.0
+# Codex adapter — 2.2.1
 
 Copy the complete package, only with installation authorization, to `.agents/skills/project-development-review/` in the intended repository. Personal scope is `~/.agents/skills/project-development-review/` in current documentation. Invoke `$project-development-review` or select it through `/skills` where exposed. [Official local Skills guidance](https://learn.chatgpt.com/docs/build-skills)
 

@@ -1,4 +1,4 @@
-# TraeWork adapter — 2.2.0
+# TraeWork adapter — 2.2.1
 
 ## Complete package and persistent layer
 

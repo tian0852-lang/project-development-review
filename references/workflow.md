@@ -1,4 +1,4 @@
-# Workflow — core 2.2.0
+# Workflow — core 2.2.1
 
 The stage keys below are normative. At each stage, read the listed references completely before generating its artifacts. Only advance after the exit evidence is available. Never bulk-create future handoff documents for directory completeness.
 

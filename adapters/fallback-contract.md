@@ -1,6 +1,6 @@
-# Minimal fallback — project-development-review 2.2.0
+# Minimal fallback — project-development-review 2.2.1
 
-<!-- fallback-version:2.2.0 -->
+<!-- fallback-version:2.2.1 -->
 <!-- fallback:start -->
 If the full package or a mandatory reference is unavailable, state the missing paths and available capabilities. This is a minimal safety fallback, not a claim of full Skill execution.
 

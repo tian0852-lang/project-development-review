@@ -1,4 +1,4 @@
-# Resource persistence — core 2.2.0
+# Resource persistence — core 2.2.1
 
 Read after a valid page/resource confirmation and before final handoff. Persistence is limited to confirmed design resources in `review_root/assets/`; `project_root` remains read-only. This step never installs dependencies, changes code/configuration or writes Git state.
 

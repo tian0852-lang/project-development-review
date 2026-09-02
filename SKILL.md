@@ -2,12 +2,12 @@
 name: project-development-review
 description: Review designs and product scope, inventory pages, assess new or changed projects, and prepare version-approved technical handoffs. Use for pre-development review and change-impact assessment, not business-code implementation or Skill-package maintenance.
 metadata:
-  version: "2.2.0"
+  version: "2.2.1"
 ---
 
 # project-development-review
 
-Core version: 2.2.0. Help designers reach a trustworthy developer handoff. Never implement business code, install dependencies, modify native configuration, or perform Git writes, even after plan approval. Writing review artifacts and confirmed resource files is allowed only in the agreed review_root; project_root is read-only.
+Core version: 2.2.1. Help designers reach a trustworthy developer handoff. Never implement business code, install dependencies, modify native configuration, or perform Git writes, even after plan approval. Writing review artifacts and confirmed resource files is allowed only in the agreed review_root; project_root is read-only.
 
 ## Start and resume
 

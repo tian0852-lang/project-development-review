@@ -1,4 +1,4 @@
-# TraeCode adapter — 2.2.0
+# TraeCode adapter — 2.2.1
 
 Prefer the reusable complete `.agents/skills/project-development-review/` package when Settings → Skills and Commands → Import settings has the .agents Skill directory enabled. Current CN documentation also supports `.trae/skills/project-development-review/` and local Skill/zip import. A same-name .trae Skill takes priority: inspect version/path, do not silently mix copies. Natural-language invocation is documented; do not assume a universal slash or dollar command. [Official TraeCode Skills](https://docs.trae.cn/ide_skills)
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.1 — 2026-09-02
+
+- Added bilingual Quick Start prompts that request a single Figma or MasterGo MCP design source, a precise design range, a current screenshot, target platform and project repository.
+- Aligned package, schema, adapter, validator and evaluation version bindings to 2.2.1.
+
 ## 2.2.0 — 2026-09-01
 
 - Added page-level resource inventory and a mandatory PAGE & RESOURCE CHECKPOINT for icons, images, dimensions, scales, formats, rights and accessibility.

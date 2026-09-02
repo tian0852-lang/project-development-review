@@ -1,4 +1,4 @@
-# Resource inventory — core 2.2.0
+# Resource inventory — core 2.2.1
 
 Read after page candidates are known and before page/resource confirmation. This inventory is evidence, not an automatic approval. Keep one selected design source; screenshots, recordings and user text supplement it but never introduce a second source.
 
